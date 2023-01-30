@@ -1,4 +1,4 @@
-# Code Quiz
+# <a href="https://vitaliyzhark.github.io/Code-Quiz/">Code Quiz</a>
 
 ## Table of Contents 
 
