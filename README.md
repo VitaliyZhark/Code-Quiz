@@ -19,7 +19,7 @@ This JavaScript Code Quiz challenge has 10 questions total and they’re all mul
 
 <h2 id="Webpage Preview">Webpage Preview</h2> 
 
-![codequiz](\assets\08-web-apis-challenge-demo.gif)
+![codequiz](\08-web-apis-challenge-demo.gif)
 
 <h2 id="Custom Features">Custom Features</h2> 
 
