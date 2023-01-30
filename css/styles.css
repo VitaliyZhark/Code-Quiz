@@ -1,88 +1,111 @@
+* {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 body {
-  font-family: Arial;
-  font-size: 120%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position:center; 
+  background-size: cover;
 }
 
-a {
-  color: #563d7c;
-  text-decoration: none;
-  transition: color 0.1s;
+main {
+  text-align: center;
+  justify-content: center;
+  flex: 1 0 auto;
+  margin-left:200px;
+  margin-right:200px;
 }
-
-a:hover {
-  color: #8570a5;
-}
-
-button {
-  display: inline-block;
-  margin: 5px;
-  cursor: pointer;
-  font-size: 100%;
-  background-color: #563d7c;
-  border-radius: 5px;
-  padding: 2px 10px;
-  color: white;
-  border: 0;
-  transition: background-color 0.1s;
-}
-
-button:hover {
-  background-color: #8570a5;
-}
-
-.choices button {
-  display: block;
-}
-
-input[type="text"] {
-  font-size: 100%;
-}
-
-ol {
-  padding-left: 0px;
-  max-height: 400px;
-  overflow: auto;
-}
-
-li {
-  padding: 5px;
-  list-style: decimal inside none;
-}
-
-li:nth-child(odd) {
-  background-color: #f3edfc;
-}
-
-.wrapper {
-  margin: 100px auto 0 auto;
-  max-width: 600px;
-}
-
-.hide {
-  display: none;
-}
-
-.start {
+footer {
   text-align: center;
 }
 
-.scores {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+.question_page {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*hide the bullet points from listings*/
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: baseline;
+  padding-left: 50px;
+  text-decoration: none;
+ }
+
+li {
+  margin-bottom: 10px;
+  
 }
 
-.feedback {
-  font-style: italic;
-  font-size: 120%;
+/*display only the intro page and hide the rest sections*/
+.question_page, .submit_page, .highscore_page, #check_line {
+  display:none;
+}
+
+.button{
+  background:rgb(193, 0, 186);
+  border-color: rgb(154, 154, 154);
+  border-width: 1px;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
   margin-top: 20px;
-  padding-top: 10px;
-  color: gray;
-  border-top: 2px solid #ccc;
+  color: white;
 }
 
-.timer {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.button:hover{
+
+  background-color:rgb(255, 1, 251);
+
+}
+
+.button-left {
+  margin-left: 50px;
+}
+
+.timer-right {
+  margin-right: 50px;
+  margin-top: 40px;
+}
+
+footer a{
+  text-decoration: none;
+  color: rgb(6, 8, 39);
+}
+
+@media only screen and (max-width: 960px) {
+  body {
+    background-color: white;
+  }
+  main {
+      margin-left:50px;
+      margin-right:50px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  body {
+    background-color: white;
+    font-size: 130%;
+  }
+  main {
+      margin-left:12px;
+      margin-right:12px;
+  }
 }

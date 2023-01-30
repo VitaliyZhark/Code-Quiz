@@ -1,48 +1,91 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html>
   <head>
+    <title>Code Quiz</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coding Quiz</title>
-
-    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
 
   <body>
-    <div class="scores"><a href="highscores.html">View Highscores</a></div>
+    <header>
+        <br><br><br>
+        <div class="header">
+            <!--Left button to view high score-->
+            <div class="button-left">
+                <button class="button" id="score_check">View Highscores</button>
+            </div>
+            <!--Right place to set a timer-->
+            <div>
+                <p class="timer-right" id="timer"> Time left: 60 s</p>
+            </div>
+        </div>
+    </header>
 
-    <div class="timer">Time: <span id="time">0</span></div>
+    <main>
+        <div>
+            <!--Introduction section-->
+            <section class="intro_page" id="intro_page">
+                <div id="introduction">
+                    <h1>
+                        Welcome to Coding Quiz Challenge!
+                    </h1>
+                    <p id="instruction">
+                        Try to answer the following code-related questions within the time limit. <p>Keep in mind that incorrect answers will penalize your score/time by five seconds!</p>
+                    </p>
+                    <button class="button" id="start_button">Start Quiz</button>
+                </div>
+            </section>
 
-    <div class="wrapper">
-      <div id="start-screen" class="start">
-        <h1>Coding Quiz Challenge</h1>
-        <p>
-          Try to answer the following code-related questions within the time
-          limit. Keep in mind that incorrect answers will penalize your
-          score/time by ten seconds!
-        </p>
-        <button id="start">Start Quiz</button>
-      </div>
+            <!--Questions section-->
+            <section class="question_page" id="question_page">
+                <div>
+                    <!--question body-->
+                    <div>
+                        <h2 id = "ask_question">Ask the question</h2>
+                        <ul>
+                            <li><button class ="choices button" id="answer_btn1" value="a">Answer1</button></li>
+                            <li><button class ="choices button" id="answer_btn2" value="b">Answer2</button></li>
+                            <li><button class ="choices button" id="answer_btn3" value="c">Answer3</button></li>
+                            <li><button class ="choices button" id="answer_btn4" value="d">Answer4</button></li>
+                        </ul>
+                    <div>
 
-      <div id="questions" class="hide">
-        <h2 id="question-title"></h2>
-        <div id="choices" class="choices"></div>
-      </div>
+                    <!--Question check-->
+                    <div id="check_line">
+                        <p>Correct or Wrong</p>
+                    <!-- </div> -->
+                </div>
+            </section>
 
-      <div id="end-screen" class="hide">
-        <h2>All done!</h2>
-        <p>Your final score is <span id="final-score"></span>.</p>
-        <p>
-          Enter initials: <input type="text" id="initials" max="3" />
-          <button id="submit">Submit</button>
-        </p>
-      </div>
+            <!--final report section-->
+            <section class="submit_page" id="submit_page">
+                <div>
+                    <h2 id="finish">All Done!</h2>
+                    <p id = "final_score">Your final score is: </p>
+                    <p>Enter initials
+                        <input id="initial">
+                        <button class="button" id="submit_btn">Submit</button>
+                    </p>
+                </div>
+            </section>
 
-      <div id="feedback" class="feedback hide"></div>
-    </div>
-
-    <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/logic.js"></script>
+            <!--High score section-->
+            <section class="highscore_page" id ="highscore_page">
+                <div>
+                    <h2>High Scores</h2>
+                    <div id="score_record"><p>Your record</p></div><br><br>
+                    <div>
+                        <button class="button" id="back_btn">Go back</button>
+                        <button class="button" id="clear_btn">Clear Highscores</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-link">Made by <a href="https://vitaliyzhark.github.io/Bootstrap-Portfolio/">Awesome Dev.</a></p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
