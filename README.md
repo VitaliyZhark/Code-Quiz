@@ -23,10 +23,10 @@ This JavaScript Code Quiz challenge has 10 questions total and they’re all mul
 
 <h2 id="Custom Features">Custom Features</h2> 
 
-- Timer-set time limit\
-- 8 JavaScript multiple choice questions\
-- Check your answer and show correct answer\
-- Local record-save your initial and score to local\
+- Timer-set time limit
+- 10 JavaScript multiple choice questions
+- Check your answer and show correct answer
+- Local record-save your initial and score to local
 - Highscore-check top 5 high score record
 
 
