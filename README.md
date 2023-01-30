@@ -11,17 +11,17 @@
   <li><a href="#License">License</li>
 </ul>
 
-<h2 id="Description">Goals</h2>
+<h2 id="Description">Description</h2>
 This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code. 
 
 This JavaScript Code Quiz challenge has 10 questions total and they’re all multiple choice. Upon completion, you will receive a score. By submitting your inital, your score will be added to a Highscore record. The Highscore board allows you to track your personal scores and display the top 5 scores yo have.
 
 
-<h2 id="Webpage Preview">Goals</h2> 
+<h2 id="Webpage Preview">Webpage Preview</h2> 
 
 ![codequiz](\assets\08-web-apis-challenge-demo.gif)
 
-<h2 id="Custom Features">Goals</h2> 
+<h2 id="Custom Features">Custom Features</h2> 
 
 - Timer-set time limit\
 - 8 JavaScript multiple choice questions\
@@ -30,7 +30,7 @@ This JavaScript Code Quiz challenge has 10 questions total and they’re all mul
 - Highscore-check top 5 high score record
 
 
-<h2 id="Technologies">Goals</h2>
+<h2 id="Technologies">Technologies</h2>
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
